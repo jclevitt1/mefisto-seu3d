@@ -1,0 +1,6 @@
+| fit | status | K | active factors | total R2 % | R2 per active factor % | smoothness per active factor | Ttr factor | iterations | train min | best match to paper factor (|r| of Z) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ours pipeline, counts thinned to 1,200 UMI per spot | done | 12 | 7 | 7.40 | 2.71, 2.21, 0.92, 0.44, 0.42, 0.41, 0.41 | 0.62, 0.71, 0.82, 0.70, 0.64, 0.78, 0.65 | F4 | 110 | 2.9 | paper F1 = F1 (0.79); paper F2 = F2 (0.96); paper F3 = F3 (0.97); paper F4 = F4 (0.85) |
+| official pipeline, thinned | done | 4 | 4 | 6.76 | 2.77, 2.17, 1.23, 0.75 | 0.70, 0.84, 0.85, 0.72 | F4 | 36 | 4.9 | paper F1 = F1 (0.84); paper F2 = F2 (0.98); paper F3 = F3 (0.98); paper F4 = F4 (0.55) |
+| plain MOFA, ours pipeline, thinned | done | 12 | 11 | 10.34 | 3.58, 2.55, 1.24, 1.13, 0.57, 0.54, 0.35, 0.31, 0.12, 0.04, 0.03 | n/a (MOFA) | F7 | 110 | 0.3 | paper F1 = F1 (0.77); paper F2 = F2 (0.94); paper F3 = F4 (0.91); paper F4 = F7 (0.88) |
+| plain MOFA, ours pipeline, K=4 (not thinned) | done | 4 | 4 | 31.32 | 12.51, 10.13, 6.58, 2.20 | n/a (MOFA) | F4 | 155 | 0.2 | paper F1 = F1 (0.80); paper F2 = F2 (0.97); paper F3 = F3 (0.92); paper F4 = F4 (0.90) |
